@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="https://im5.ezgif.com/tmp/ezgif-5-40786970ba.png" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Dev Server</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li><a href="https://github.com/alvaricodev" class="header__link">Github</a></li>
+          <li class="header__line"></li>
+          <li><button class="ri-sun-fill"></button></li>
+          <li><a href="#" class="hire__me btn">Hire me PLS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <img class="hero__img" src="https://em-content.zobj.net/source/microsoft-teams/337/person-cartwheeling_1f938.png" alt="cartwheel">
+        <h1 class="hero__title">BAT🤸MALUNGKOT🤸ANG🤸BESHIE🤸KO?</h1>
+        <p class="hero__description">Turn any text you type to beshified version</p>
+      </section>
+      <section class="form container">
+          <input id="textInput" oninput="replaceSpacesWithEmoji()" type="text" placeholder="Type🤸na🤸bhie">
+          <button class="form__copy btn" onclick="copyText()">Copy</button>
+      </section>
+    </main>
+
+    <script type="module" src="./src/main.js"></script>
+    <script>
+      function replaceSpacesWithEmoji() {
+        const input = document.getElementById('textInput');
+        const text = input.value;
+        const replacedText = text.replaceAll(' ', '🤸');
+        input.value = replacedText;
+      }
+
+      function copyText() {
+        const input = document.getElementById('textInput');
+        input.select();
+        document.execCommand('copy');
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.form {
+    text-align: center;
+    display: flex-block;
+    flex-direction: inherit;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.form__copy {
+    margin-left: 1rem;
+    font-size: var(--sizes-xl);
+}
+
+input {
+    width: 30rem;
+    height: auto;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--clr-yellow);
+    border-radius: 50px;
+    color: var(--clr-light);
+    outline: none;
+}
+
+
+
+
